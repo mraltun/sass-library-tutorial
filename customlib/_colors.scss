@@ -1,0 +1,11 @@
+// Looping over Maps. key and val are local variables
+@each $key, $val in $colors {
+  // #{} for using variables (.text-primary)
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+}
