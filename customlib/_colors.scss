@@ -29,7 +29,7 @@
       // .text-hover-yellow-light-1:hover
       .text-hover-#{$key}-light-#{$i} {
         &:hover {
-          color: $mix(white, $val, $i * 10%);
+          color: mix(white, $val, $i * 10%);
         }
       }
 
@@ -46,7 +46,7 @@
 
       .text-hover-#{$key}-dark-#{$i} {
         &:hover {
-          color: $mix(black, $val, $i * 10%);
+          color: mix(black, $val, $i * 10%);
         }
       }
 
