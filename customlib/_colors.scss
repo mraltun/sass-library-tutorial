@@ -5,6 +5,12 @@
     color: $val;
   }
 
+  .text-hover-#{$key} {
+    &:hover {
+      color: $val;
+    }
+  }
+
   .bg-#{$key} {
     background-color: $val;
   }
@@ -20,6 +26,13 @@
         color: mix(white, $val, $i * 10%);
       }
 
+      // .text-hover-yellow-light-1:hover
+      .text-hover-#{$key}-light-#{$i} {
+        &:hover {
+          color: $mix(white, $val, $i * 10%);
+        }
+      }
+
       .bg-#{$key}-light-#{$i} {
         background-color: mix(white, $val, $i * 10%);
       }
@@ -29,6 +42,12 @@
     @for $i from 1 through 9 {
       .text-#{$key}-dark-#{$i} {
         color: mix(black, $val, $i * 10%);
+      }
+
+      .text-hover-#{$key}-dark-#{$i} {
+        &:hover {
+          color: $mix(black, $val, $i * 10%);
+        }
       }
 
       .bg-#{$key}-dark-#{$i} {
