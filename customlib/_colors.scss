@@ -9,28 +9,31 @@
     background-color: $val;
   }
 
-  //  Light variations
-  // Cycle through each color above and for each color we cycle 9 times
-  @for $i from 1 through 9 {
-    // .text-color-dark-6
-    .text-#{$key}-light-#{$i} {
-      // Mix the color with val and how much % to mix them
-      color: mix(#fff, $val, $i * 10%);
+  // Don't make variations for black and white colors
+  @if ($val != black and $val != white) {
+    //  Light variations
+    // Cycle through each color above and for each color we cycle 9 times
+    @for $i from 1 through 9 {
+      // .text-color-dark-6
+      .text-#{$key}-light-#{$i} {
+        // Mix the color with val and how much % to mix them
+        color: mix(white, $val, $i * 10%);
+      }
+
+      .bg-#{$key}-light-#{$i} {
+        background-color: mix(white, $val, $i * 10%);
+      }
     }
 
-    .bg-#{$key}-light-#{$i} {
-      background-color: mix(#fff, $val, $i * 10%);
-    }
-  }
+    //  Dark variations
+    @for $i from 1 through 9 {
+      .text-#{$key}-dark-#{$i} {
+        color: mix(black, $val, $i * 10%);
+      }
 
-  //  Dark variations
-  @for $i from 1 through 9 {
-    .text-#{$key}-dark-#{$i} {
-      color: mix(#000, $val, $i * 10%);
-    }
-
-    .bg-#{$key}-dark-#{$i} {
-      background-color: mix(#000, $val, $i * 10%);
+      .bg-#{$key}-dark-#{$i} {
+        background-color: mix(black, $val, $i * 10%);
+      }
     }
   }
 }
