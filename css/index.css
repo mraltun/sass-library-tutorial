@@ -2623,9 +2623,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #326dee;
+  color: #fae7bf;
 }
 .btn-complement-primary:hover {
   color: #326dee;
+  background-color: #fae7bf;
 }
 
 .btn-secondary {
@@ -2663,9 +2665,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #1ac888;
+  color: #f08bb0;
 }
 .btn-complement-secondary:hover {
   color: #1ac888;
+  background-color: #f08bb0;
 }
 
 .btn-error {
@@ -2703,9 +2707,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #d32752;
+  color: #a5eedc;
 }
 .btn-complement-error:hover {
   color: #d32752;
+  background-color: #a5eedc;
 }
 
 .btn-info {
@@ -2743,9 +2749,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #f6c31c;
+  color: #afc1fc;
 }
 .btn-complement-info:hover {
   color: #f6c31c;
+  background-color: #afc1fc;
 }
 
 .btn-blue {
@@ -2783,9 +2791,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #1919e6;
+  color: #f5f5a3;
 }
 .btn-complement-blue:hover {
   color: #1919e6;
+  background-color: #f5f5a3;
 }
 
 .btn-red {
@@ -2823,9 +2833,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #e61919;
+  color: #a3f5f5;
 }
 .btn-complement-red:hover {
   color: #e61919;
+  background-color: #a3f5f5;
 }
 
 .btn-yellow {
@@ -2863,9 +2875,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #e6e619;
+  color: #a3a3f5;
 }
 .btn-complement-yellow:hover {
   color: #e6e619;
+  background-color: #a3a3f5;
 }
 
 .btn-green {
@@ -2903,9 +2917,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #19e635;
+  color: #f5a3ea;
 }
 .btn-complement-green:hover {
   color: #19e635;
+  background-color: #f5a3ea;
 }
 
 .btn-orange {
@@ -2943,9 +2959,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #ffa600;
+  color: #99bdff;
 }
 .btn-complement-orange:hover {
   color: #ffa600;
+  background-color: #99bdff;
 }
 
 .btn-purple {
@@ -2983,9 +3001,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #9900ff;
+  color: #c2ff99;
 }
 .btn-complement-purple:hover {
   color: #9900ff;
+  background-color: #c2ff99;
 }
 
 .btn-gray {
@@ -3023,9 +3043,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: #808080;
+  color: #cdcdcd;
 }
 .btn-complement-gray:hover {
   color: #808080;
+  background-color: #cdcdcd;
 }
 
 .btn-black {
@@ -3063,9 +3085,11 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: black;
+  color: #4d4d4d;
 }
 .btn-complement-black:hover {
   color: black;
+  background-color: #4d4d4d;
 }
 
 .btn-white {
@@ -3103,7 +3127,9 @@ img {
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   background-color: white;
+  color: white;
 }
 .btn-complement-white:hover {
   color: white;
+  background-color: white;
 }
