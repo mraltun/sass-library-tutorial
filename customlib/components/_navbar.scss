@@ -1,4 +1,5 @@
-.flex-layout {
+// Placeholder makes this class won't be compiled inside css
+%flex-layout {
   width: 100%;
   display: flex;
   align-items: center;
@@ -8,11 +9,22 @@
 
 .navbar {
   // Similar to mixing except no arguments
-  @extend .flex-layout;
+  @extend %flex-layout;
   padding: $base-padding $base-padding * 2;
   box-shadow: $base-box-shadow;
 
   .site-title {
     font-size: $font-size-lg;
+  }
+
+  .container {
+    @extend %flex-layout;
+  }
+}
+
+@each $key, $val in $colors {
+  .navbar-#{$key} {
+    @extend .navbar;
+    background-color: $val;
   }
 }
