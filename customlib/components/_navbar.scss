@@ -1,4 +1,14 @@
+.flex-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
 .navbar {
+  // Similar to mixing except no arguments
+  @extend .flex-layout;
   padding: $base-padding $base-padding * 2;
   box-shadow: $base-box-shadow;
 
