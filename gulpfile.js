@@ -4,7 +4,7 @@ const purgecss = require("gulp-purgecss");
 
 // Compile the CSS from SCSS
 function buildStyles() {
-  return src("customlib/**/*.scss")
+  return src("sass/**/*.scss")
     .pipe(sass())
     .pipe(purgecss({ content: ["*.html"] }))
     .pipe(dest("css"));
@@ -12,7 +12,7 @@ function buildStyles() {
 
 // Watch the changes and re-compile.
 function watchTask() {
-  watch(["customlib/**/*.scss"], buildStyles);
+  watch(["sass/**/*.scss", "*.html"], buildStyles);
 }
 
 exports.default = series(buildStyles, watchTask);
